@@ -1,20 +1,31 @@
 # Core dependencies
-numpy==1.21.0
-pandas==1.3.0
-matplotlib==3.4.2
+numpy==1.25.2
+pandas==2.0.3
+pandas-datareader==0.10.0
+pandas-gbq==0.19.2
+pandas-stubs==2.0.3.230814
+matplotlib==3.7.1
+matplotlib-inline==0.1.7
+matplotlib-venn==0.11.10
 
 
 
 # Machine learning libraries
-scikit-learn==0.24.2
-tensorflow==2.5.0
+scikit-image==0.19.3
+scikit-learn==1.2.2
+tensorflow @ https://storage.googleapis.com/colab-tf-builds-public-09h6ksrfwbb9g9xv/tensorflow-2.15.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl#sha256=a2ec79931350b378c1ef300ca836b52a55751acb71a433582508a07f0de57c42
+tensorflow-datasets==4.9.4
+tensorflow-estimator==2.15.0
+tensorflow-gcs-config==2.15.0
+tensorflow-hub==0.16.1
+tensorflow-io-gcs-filesystem==0.37.0
+tensorflow-metadata==1.15.0
+tensorflow-probability==0.23.0
 
 # Additional libraries
-requests==2.25.1
+requests==2.31.0
 streamlit_lottie==0.0.2
-streamlit==1.3.0
-streamlit==0.87.0
-requests==2.24.0
+streamlit==1.35.0
 Pillow==8.4.0
 protobuf~=3.19.0
 watchdog==2.1.8
