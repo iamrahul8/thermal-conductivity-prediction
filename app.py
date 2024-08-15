@@ -28,10 +28,10 @@ def predict_thermal_conductivity_updated(bulk_density, porosity, saturation):
 import streamlit as st
 
 # Example usage
-bulk_density = st.number_input('Bulk density') # g/cm^3
+dry_density = st.number_input('Dry density') # g/cm^3
 porosity = st.number_input('Porosity')# fraction
 saturation = st.number_input('Saturation') # fraction
-predicted_thermal_conductivity = predict_thermal_conductivity_updated(bulk_density, porosity, saturation)
+predicted_thermal_conductivity = predict_thermal_conductivity_updated(dry_density, porosity, saturation)
 print("Predicted Thermal Conductivity:", predicted_thermal_conductivity)
 st.write('# Predicted Thermal Conductivity is ',predicted_thermal_conductivity)
 st.write("---")
