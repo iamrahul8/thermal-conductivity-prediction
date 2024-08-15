@@ -23,6 +23,8 @@ model.fit(X_train, y_train)
 # Function to take input and predict
 def predict_thermal_conductivity_updated(bulk_density, porosity, saturation):
     input_data = [bulk_density, porosity, saturation]
+    if bulk_density == 0 and porosity == 0 and saturation == 0:
+      return 0
     predicted_thermal_conductivity = model.predict([input_data])
     return predicted_thermal_conductivity[0]
 import streamlit as st
